@@ -11,7 +11,7 @@ def main():
     employees = parse_files(args.files)
     report_class = get_report_class(args.report)
     report = report_class(employees)
-    print(report.generate())
+    report.generate()
 
 if __name__ == '__main__':
     main()
